@@ -121,16 +121,16 @@ var b = second();
 c = a-b;
 if(c==0)
 {
-    alert("Tie");
+    alert("TIE");
     return;
 }
 else if((a==0 && b==2)||(a==1 && b==0)||(a==2 && b==1)) {
-    alert("player 2 won the match");
+    alert("player 1 won the match");
     return;
 }
 else
 {
-    alert("player2 won the match")
+    alert("player 2 won the match")
     return;
 }
 }
