@@ -1,0 +1,53 @@
+<html>   
+   <head>
+      <title>palindrome and anagram</title>      
+     <script src="main.js" ></script>
+   <style type="text/css">
+      tr:hover {background-color:#4BFF30;}
+tr {
+  background-color: rgb(220,20,60);
+  color: white;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+}
+     </style>
+   </head>
+   
+   <body>
+      <form  name = "form" >
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Input 1</td>
+               <td><input type = "text" name = "i1"/></td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" onclick="palindrome()" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>     
+      <form  name = "form2" >
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Input 1</td>
+               <td><input type = "text" name = "i2" /></td>
+            </tr>
+            <tr>
+               <td align = "right">Input 2</td>
+               <td><input type = "text" name = "i3" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" onclick="anagram()" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>  
+   </body>
+</html>
