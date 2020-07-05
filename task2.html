@@ -1,0 +1,47 @@
+<html>   
+   <head>
+      <title>Form Validation</title>      
+     <script src="main1.js" ></script>
+     <style type="text/css">
+     	tr:hover {background-color:#4BFF30;}
+tr {
+  background-color: #1E90FF;
+  color: white;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+}
+     </style>
+  
+   </head>
+   
+   <body>
+      <form  name = "form" >
+         <table align = "center" cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Full Name</td>
+               <td><input type = "text" name = "text1" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Email</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Mobile number</td>
+               <td><input type = "tel" name = "phone" /></td>
+            </tr>
+            
+            
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" onclick="allLetter(document.form.text1);validateEmail();Validation()" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+   </body>
+</html>
