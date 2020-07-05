@@ -6,7 +6,7 @@
          
          if (atpos < 1 || ( dotpos - atpos < 2 )) {
             alert("Please enter correct email ID")
-            document.form.EMail.focus() ;
+            document.form.Email.focus() ;
             return false;
          }
          return( true );
@@ -23,13 +23,13 @@ return false;
 }
 if(isNaN(a))
 {
-alert("Enter the valid Mobile Number(Like : 9566137117)");
+alert("Enter the valid Mobile Number(Like : 9618132245)");
 document.form.phone.focus();
 return false;
 }
 if(a.length !=10)
 {
-alert(" Your Mobile Number must be 1 to 10 Integers");
+alert(" Your Mobile Number must be 0 to 9 Integers");
 document.form.phone.select();
 return false;
 }
@@ -54,11 +54,11 @@ function allLetter(a)
    var b =str.localeCompare(a)
    if (b ==0)
    {
-    alert("its a palindrome");
+    alert("It is a palindrome");
     return true;
    }
    else{
-    alert("not a palindrome");
+    alert("Not a palindrome");
     return false;
    }
 }
@@ -67,11 +67,11 @@ function anagram(s1, s2){
     var s2 = document.form2.i3.value;
     var c = s1.toLowerCase().replace(" ", "").split("").sort().join("") === s2.toLowerCase().replace(" ", "").split("").sort().join("");
     if(c){
-        alert("it  is anagram");
+        alert("It  is an anagram");
         return true
     }else
     {
-        alert("not an anagram")
+        alert("Not an anagram")
         return false
     }
 }
@@ -106,31 +106,31 @@ function first()
     first= (first%3);
     return first;
 }
-function sec()
+function second()
 {
-    var sec =Math.floor(Math.random() * 1000);
-    sec= (sec%3);
-    return sec;
+    var second =Math.floor(Math.random() * 1000);
+    second= (second%3);
+    return second;
 }
 function result()
 {
   
 var a = first();
 
-var b = sec();
+var b = second();
 c = a-b;
 if(c==0)
 {
-    alert("match draw");
+    alert("Tie");
     return;
 }
 else if((a==0 && b==2)||(a==1 && b==0)||(a==2 && b==1)) {
-    alert("1st player won the match");
+    alert("player 2 won the match");
     return;
 }
 else
 {
-    alert("2nd player won")
+    alert("player2 won the match")
     return;
 }
 }
